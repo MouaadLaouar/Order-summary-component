@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  height: 600px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+section .illustration {
+  border-radius: 20px 20px 0px 0px;
+  height: 200px;
+  width: 100%;
+  background-image: url(../../images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+section .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+}
+
+section .content h1, section .content p {
+  text-align: center;
+  width: 80%;
+}
+
+section .content .plan {
+  height: 50px;
+  width: 80%;
+  padding: 20px;
+  background-color: #f5f7ff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .content .plan .icons {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .content .plan .annual-plan {
+  height: 100%;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(-50px);
+}
+
+section .content .plan .annual-plan h1 {
+  font-size: 15px;
+}
+
+section .content .plan a {
+  display: flex;
+  align-items: center;
+}
+
+section .content .plan a:hover {
+  color: #1f2f56;
+}
+
+section .content .proceed {
+  height: 50px;
+  width: 80%;
+  background-color: #3829e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 20px;
+}
+
+section .content .proceed:hover {
+  background-color: #1f2f56;
+  cursor: pointer;
+}
+
+section .content .cancel {
+  color: #7280a7;
+}
+
+section .content .cancel:hover {
+  color: black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    background-image: url(../../images/pattern-background-mobile.svg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
